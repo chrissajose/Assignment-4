@@ -1,0 +1,667 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+.topbar {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 8fr 0.1fr 0.8fr 0.6fr 0.2fr;
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 0px 20px;
+    z-index: 1;
+    align-items: center;
+}
+
+.logo img {
+    width: 142px;
+    height: 30px;
+}
+
+.search {
+    position: relative;
+    justify-self: center;
+    width: 60%;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 0px 42px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search img {
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.user {
+    position: relative;
+}
+
+.user img {
+    position: absolute;
+    top: -18px;
+    left: 52.2px;
+    object-fit: cover;
+}
+
+.username {
+    left: 12px;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+}
+.items img{
+    width: 20px;
+    height: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 80px;
+    width: 200px;
+    height: calc(100% - 80px);
+    overflow-x: hidden;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar ul li a {
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    height: 43px;
+    display: flex;
+    margin-left: 13px;
+    align-items: center;
+    font: normal normal normal 16px/21px Roboto;
+}
+
+.sidebar ul li a img {
+    width: 19px;
+    height: 19px;
+    align-items: center;
+    margin-right: 12.5px;
+}
+
+.sidebar ul li:hover {
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+
+.sidebar ul li:hover a {
+    color: #C8242F;
+}
+.content-div{
+
+            position: absolute;
+            top: 80px;
+            
+            width: 100%;
+            left: 200px;
+            min-height: calc(100vh - 80px);
+            background: #FAFAFA 0% 0% no-repeat padding-box;
+            background-color: aqua;
+            
+            
+        
+}
+/*
+nav{
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 0 0 0.1rem rgb(210,210,210);
+    background-color: #FFFFFF;
+    position: sticky;
+   
+    
+}
+.navbar-header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+}
+img,svg{
+    width: 30px;
+    height: 30px;
+}
+.hamburger-menu, .search-icon,.chocolate-menu, .kebab-menu, .user{
+    width: 2.5rem;
+    height: 2.5rem;
+    
+    display: grid;
+    place-items: center;
+}
+.left-content, .middle-content, .search-container, .right-content, .user-butn, .down-button{
+    display: flex;
+    align-items: center;
+}
+.comp-logo{
+    width: 200px;
+    cursor: pointer;
+    margin-left: 0.2rem;
+    
+}
+.search-container{
+    width: 500px;
+    height: 40px;
+    position: relative;
+}
+.search-container input{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem ;
+    padding: 0 0.5rem;
+    outline: none;
+    border: 0px;
+}
+.down-button{
+    border: 0px;
+    
+    cursor: pointer;
+}
+.down-button a{
+    text-decoration: none;
+    color: #000000;
+}
+.user-name{
+    white-space: nowrap;
+}
+*/
+/*
+.sidebar {
+    padding-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #3E3E3E;
+    
+}
+
+.items {
+    display: flex;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-right: 0.2rem;
+}
+
+.items:hover {
+    background-color: #FFF3F4;
+    color: #C8242F;
+
+}
+
+.items p {
+    margin-left: 1rem;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+
+}
+.no-padding{
+    
+    /*padding-right: 0 !important;
+    background-color: #FAFAFA;;
+}*/
+.info, .sale{
+    
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap:0.5rem;
+    justify-content: space-between;
+    margin-top: 1.5em;
+    margin-left: 0.5rem;
+    
+   
+}
+.card{
+    width: var(--cardWidth);
+        height: var(--cardHeight);
+        margin: var(--cardMargin);
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #fff;
+        box-sizing: border-box;
+}
+.info_content{
+    display: grid;
+}
+
+.num {
+    font-size: 25px;
+    font-family: 'Roboto Medium';
+    color: #3E3E3E;
+}
+
+.datagraph{
+    width: 100%;
+    height: auto;
+}
+.piechart {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.saletxt, .salebcountry, .invoice-heading {
+
+    color: #3E3E3E;
+    font-family: 'Roboto Medium';
+    font-size: 22px;
+    
+}
+.condition {
+    float: right;
+    font-family: 'Roboto';
+    font-weight: 300px;
+    color: #ADADAD;
+}
+.yearly {
+    color: #C8242F;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.dot1 {
+    height: 10px;
+    width: 10px;
+    background-color: #C8242F;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot2 {
+    height: 10px;
+    width: 10px;
+    background-color: #A2B86C;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot3 {
+    height: 10px;
+    width: 10px;
+    background-color: #F16C20;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot4 {
+    height: 10px;
+    width: 10px;
+    background-color: #EBC844;
+    border-radius: 50%;
+    display: inline-block;
+}
+.invoice{
+    width: 80%;
+    margin-top: 1.5em;
+    margin-left: 0.5rem
+    
+    
+}
+.view{
+    color: #C8242F;
+        float: right;
+        text-underline-offset: 2px;
+        font-family: 'Roboto';
+        margin-right: 0.5rem;
+        text-decoration: underline;
+}
+.scroll{
+    overflow-x: auto;
+}
+
+.scroll td {
+    white-space: normal !important;
+    word-wrap: break-word;
+}
+.card{
+    position: static!important;
+}
+.info_img {
+    width: 28px;
+    height: auto;
+
+}
+/*
+aside{
+    width: 17% ;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 3rem;
+    bottom: 0;
+}
+.sidebar{
+    padding-top: 0.3rem;
+    width: 100%;
+    height: 92vh;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #3E3E3E;
+}
+.items{
+    display: flex;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-right: 0.2rem;
+}
+.items:hover{
+    background-color: #FFF3F4;
+    color: #C8242F;
+
+}
+.items p{
+        margin-left: 1rem;
+        font-size: 1rem;
+        margin-top: 0.2rem;
+        
+}
+*/
+
+@media screen and (max-width:767px) {
+    
+
+    .info, .sale{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.2rem;
+        }
+    
+    .comp-logo{
+        visibility: hidden;
+    }
+        .sidebar {
+            width: 270px;
+            position: fixed;
+            left: -270px;
+        }
+    .content-div {
+        left: 0px;
+            width: 100%;
+            display: inline-block;
+    }
+    .sidebar.active {
+    left: 0px;
+    }
+                
+    .sidebar.active~ .content-div{
+    width: fit-content;
+        margin-left: 270px;
+    }
+       
+    
+    
+}
+.subcontent{
+    margin-left: 0.5rem;
+}
+/*content div css
+.heading {
+    font-size: 30px;
+    font-family: 'Roboto Medium';
+    width: 146px;
+    height: auto;
+    color: #000000;
+}
+
+.content_div {
+    width: 80%;
+    margin-left: auto;
+
+}
+
+.info {
+    display: flex;
+    width: 1217px;
+    gap: 30px;
+    background-color: #FAFAFA;
+    margin-top: 22px;
+}
+
+.info_img {
+    width: 28px;
+    height: auto;
+    
+}
+
+.info_text {
+
+    font-family: 'Roboto';
+    white-space: nowrap;
+    color: #3E3E3E;
+    font-size: 16px;
+    width: 219px;
+    height: 116px;
+    padding-top: 41px;
+    padding-left: 38px;
+    background-color: #FFFFFF;
+
+}
+
+.text {
+    float: right;
+    padding: 21px;
+}
+
+.num {
+    font-size: 25px;
+    font-family: 'Roboto Medium';
+    color: #3E3E3E;
+}
+
+.flex2 {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    width: auto;
+}
+
+.sales {
+
+    margin-top: 53px;
+    width: 802px;
+    height: 400px;
+
+}
+
+.saletxt {
+
+    color: #3E3E3E;
+    font-family: 'Roboto Medium';
+
+
+    font-size: 22px;
+    margin-top: 53px;
+}
+
+.condition {
+    float: right;
+    font-family: 'Roboto';
+    font-weight: 300px;
+    color: #ADADAD;
+    margin-top: 10px;
+}
+
+.yearly {
+    color: #C8242F;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.sale {
+    width: auto;
+    height: 400px;
+    background-color: #FFFFFF;
+    padding-top: 23px;
+    padding-left: 29px;
+    padding-right: 20px;
+}
+
+.datagraph {
+    
+    height: auto;
+}
+
+.sale_by_country {
+    width: 350px;
+    height: 398px;
+    float: right;
+    background-color: #FFFFFF;
+    padding-top: 23px;
+    padding-left: 29px;
+    padding-right: 20px;
+}
+
+.salebcountry {
+
+    font-size: 22px;
+    font-family: 'Roboto Medium';
+    font-weight: normal;
+    color: #3E3E3E;
+
+
+}
+
+.piechart {
+    display: block;
+    margin-left: 60px;
+    padding-top: 23px;
+}
+
+.country {
+    border: none;
+    margin-left: 49px;
+}
+
+table.country td {
+    padding: 5px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #3E3E3E;
+}
+
+.dot1 {
+    height: 10px;
+    width: 10px;
+    background-color: #C8242F;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot2 {
+    height: 10px;
+    width: 10px;
+    background-color: #A2B86C;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot3 {
+    height: 10px;
+    width: 10px;
+    background-color: #F16C20;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot4 {
+    height: 10px;
+    width: 10px;
+    background-color: #EBC844;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.invoice {
+    margin-top: 53px;
+    background-color: #FFFFFF;
+    width: min-content;
+    padding-left: 35px;
+    padding-top: 22px;
+    height: 558px;
+}
+
+.invoice_txt {
+    font-size: 22px;
+    font-family: 'Roboto Medium';
+    color: #3E3E3E;
+}
+
+.invoice u {
+    color: #C8242F;
+    float: right;
+    margin-right: 29px;
+    text-underline-offset: 2px;
+    font-family: 'Roboto';
+}
+
+.invoice_tbl {
+    width: 1177px;
+    border: none;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 38px;
+    padding: 0px;
+    text-align: left;
+}
+
+table.invoice_tbl td {
+    padding-top: 27px;
+    padding-right: 60px;
+    color: #3E3E3E;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400px;
+}
+
+table.invoice_tbl th {
+    color: #ADADAD;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.paid {
+    color: #3CDD5F;
+}
+
+.failed {
+    color: #FF4545;
+}
+
+.pending {
+    color: #BABABA;
+}
+
+.analysis {
+    display: flex;
+}*/
