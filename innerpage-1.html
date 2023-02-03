@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/dashboard-1.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    
+    
+    <title>innerpage</title>
+</head>
+
+<body>
+    <div class="container-fulid">
+        <div class="topbar">
+            <img src="images/menu-bar.svg" alt="" id="menubar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="" class="comp-logo">
+            </div>
+            <div class="search">
+                <img src="images/search-icon.svg" class="searchimg" alt="">
+                <input type="text" id="search" placeholder="Search">
+            </div>
+            <div class="notification">
+                <img src="images/notification-icon.svg" alt="" class="navigation">
+            </div>
+            <div class="user">
+                <img src="images/profile.png" alt="">
+            </div>
+            <div class="username">
+                John Doe
+            </div>
+            <img src="images/downward-arrow.svg" alt="">
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <img src="images/dashboard-default.svg" alt="">
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="innerpage.html">
+                        <img src="images/graph-default.svg" alt="">
+                        <div>Analysis</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/inbox-default.svg" alt="">
+                        <div>Inbox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/clock-default.svg" alt="">
+                        <div>History</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/user-default.svg" alt="">
+                        <div>Users</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/maintenance-default.svg" alt="">
+                        <div>Maintenance</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/setting-default.svg" alt="">
+                        <div>Setting</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content-div">
+            <div class="row">
+                <h2>Analysis</h2>
+            </div>
+            <div class="subcontent bg-white p-3">
+                <h4>One Column</h4>
+                <div class="row">
+                    <div class="mb-3"><input type="email" class="form-control w-100 shadow-none" id="name-col1" placeholder="Name"></div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-12 mb-3">
+                        <div class=" dropdown dropdown-button">
+                            <button class="col-md-6 btn dropdown-toggle w-100 text-start shadow-none " type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3">
+                        <textarea class="form-control w-100 shadow-none"  id="exampleFormControlTextarea1" rows="3" placeholder="Multiple Line"></textarea>
+                    </div>
+                    
+                </div>
+
+                <h4>Two Column</h4>
+                <div class="d-flex column2-flex gap-2 ">
+                    <div class="col">
+                        <input type="email" class="form-control name-col2 shadow-none" id="exampleFormControlInput1" placeholder="Name">
+                    </div>
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control shadow-none" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Username</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex column2-flex gap-2 mt-2 mb-3">
+                    <div class="col">
+                        <input type="email" class="form-control w-100  password-col2 shadow-none" id="exampleFormControlInput1" placeholder="Password">
+                    </div>
+                    <div class="col">
+                        <div class="dropdown dropdown-button">
+                            <button class="btn btn-white dropdown-toggle text-start w-100 border-1 dropdownbutheight shadow-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu shadow-none" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Three Column</h4>
+                <div class="d-flex column3-flex gap-2 mb-3">
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control border-danger shadow-none" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Focus</label>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control shadow-none" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Password</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control dashed-border shadow-none" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Disabled</label>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Four Column</h4>
+                <div class="d-flex column4-flex gap-1 mb-3">
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control border-danger shadow-none" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput" class="text-danger">Designation</label>
+                            <p class="p-2 text-danger">Enter valid data</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <input type="email" class="form-control form-control-lg shadow-none" id="exampleFormControlInput1" placeholder="Name">
+                        <p class="p-2 text-black-50">Enter your full name as per ID</p>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control shadow-none" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Username</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown dropdown-button">
+                            <button class="btn btn-white dropdown-toggle w-100 text-start dropdownbutheight shadow-none" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <h4>Other Design Elements</h4>
+                <h5 class="mt-4 mb-3">File Upload</h5>
+                <button class="file"><img src="images/cloud-upload-icon.svg">
+                    Upload</button>
+                    <span class="text-black-50 text-end">No item selected</span>
+
+                <h5 class="mt-4 mb-3">Radio Button</h5>
+
+                    <div class="d-flex radiobutton-flex col-md-9 gap-5">
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Option 1
+                            </label>
+                        </div>
+                    
+                    
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Option 2
+                            </label>
+                        </div>
+                    </div>
+
+                <h5 class="mt-4 mb-3">Check Box</h5>
+
+                <div class="d-flex checkbox-flex col-md-9 gap-5">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Option 1
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Option 2
+                        </label>
+                    </div>
+                </div>
+                
+                <h5 class="mt-4 mb-3">Snack Bar</h5>
+                <div class="d-flex column2-flex gap-2 ">
+                    <div class="col error">
+                        <img src="images/error-icon.svg" class="snack-icon"><span class="text-danger">This is an error message</span>
+                    </div>
+                    <div class="col information">
+                        <img src="images/info-icon.svg" class="snack-icon"><span class="text-info">This is an information message</span>
+                    </div>
+                </div>
+                <div class="d-flex column2-flex gap-2 mt-2 mb-3">
+                    <div class="col warning">
+                        <img src="images/warning-icon.svg" class="snack-icon"><span class="text-warning">This is a warning message</span>
+                    </div>
+                    <div class="col success">
+                        <img src="images/success-icon.svg" class="snack-icon "><span class="text-success">This is a success message</span>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-3 gap-2">Call to Action</h5>
+                <button type="button" class="btn  btn-outline-danger rounded-6 ">Primary</button>
+                <button type="button" class="btn  btn-outline-danger rounded-6">Secondary</button>
+
+                <h5 class="mt-4 mb-3">Tabs</h5>
+                    <div class="tab">
+                        <button class="tablinks" onclick=>Tab1</button>
+                        <button class="tablinks" onclick=>Tab2</button>
+                        <button class="tablinks" onclick=>Tab3</button><br>
+                    
+                        <div class="tab_content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                            essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                        </div>
+                    </div>
+                        
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#menubar').click(function () {
+            $('.sidebar').toggleClass("active");
+        })
+        
+    </script>
+</body>
+</html>
